@@ -1,11 +1,7 @@
 <?php
 class Users extends Controller {
     public function __construct() {
-<<<<<<< HEAD
-        $this->userModel = $this->model('User');
-=======
         $this->userModel = $this->model('User_model');
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
     }
 
     public function register() {
@@ -17,7 +13,8 @@ class Users extends Controller {
             'usernameError' => '',
             'emailError' => '',
             'passwordError' => '',
-            'confirmPasswordError' => ''
+            'confirmPasswordError' => '',
+            'judul' => 'Register | ShoppingSkuyyy'
         ];
 
       if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -33,7 +30,8 @@ class Users extends Controller {
                 'usernameError' => '',
                 'emailError' => '',
                 'passwordError' => '',
-                'confirmPasswordError' => ''
+                'confirmPasswordError' => '',
+                'judul' => 'Register | ShoppingSkuyyy'
             ];
 
             $nameValidation = "/^[a-zA-Z0-9]*$/";
@@ -92,10 +90,7 @@ class Users extends Controller {
             }
         }
         $this->view('users/register', $data);
-<<<<<<< HEAD
-=======
         $this->view('includes/footer');
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
     }
 
     public function login() {
@@ -104,7 +99,8 @@ class Users extends Controller {
             'username' => '',
             'password' => '',
             'usernameError' => '',
-            'passwordError' => ''
+            'passwordError' => '',
+            'judul' => 'Login | ShoppingSkuyyy'
         ];
 
         //Check for post
@@ -117,6 +113,7 @@ class Users extends Controller {
                 'password' => trim($_POST['password']),
                 'usernameError' => '',
                 'passwordError' => '',
+                'judul' => 'Login | ShoppingSkuyyy'
             ];
             //Validate username
             if (empty($data['username'])) {
@@ -138,10 +135,7 @@ class Users extends Controller {
                     $data['passwordError'] = 'Password or username is incorrect. Please try again.';
 
                     $this->view('users/login', $data);
-<<<<<<< HEAD
-=======
                     $this->view('includes/footer');
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
                 }
             }
 
@@ -150,25 +144,19 @@ class Users extends Controller {
                 'username' => '',
                 'password' => '',
                 'usernameError' => '',
-                'passwordError' => ''
+                'passwordError' => '',
+                'judul' => 'Login | ShoppingSkuyyy'
             ];
         }
         $this->view('users/login', $data);
-<<<<<<< HEAD
-=======
         $this->view('includes/footer');
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
     }
 
     public function createUserSession($user) {
         $_SESSION['user_id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['email'] = $user->email;
-<<<<<<< HEAD
         header('location:' . URLROOT . '/home/index');
-=======
-        header('location:' . URLROOT . '/pages/index');
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
     }
 
     public function logout() {

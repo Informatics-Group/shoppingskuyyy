@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
     //Load the model and the view
     class Controller {
         public function model($model) {
@@ -18,15 +17,3 @@
             }
         }
     }
-=======
-
-class Controller{
-  public function view($view, $data = []){
-    require_once '../app/views/' . $view . '.php';
-  }
-  public function model($model){
-    require_once '../app/models/' . $model . '.php';
-    return new $model; // harus instansiasi
-  }
-}
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977

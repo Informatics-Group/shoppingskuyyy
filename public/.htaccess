@@ -4,10 +4,5 @@
   RewriteBase /shoppingskuyyy/public
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-<<<<<<< HEAD
   RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
 </IfModule>
-=======
-  RewriteRule  ^(.*)$ index.php?url=$1 [QSA,L]
-</IfModule>
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977

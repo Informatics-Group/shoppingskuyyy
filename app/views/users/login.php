@@ -2,15 +2,6 @@
    require APPROOT . '/views/includes/head.php';
 ?>
 
-<<<<<<< HEAD
-=======
-<div class="navbar">
-    <?php
-       require APPROOT . '/views/includes/navigation.php';
-    ?>
-</div>
-
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
 <div class="container-login">
     <div class="wrapper-login">
         <h2>Sign in</h2>

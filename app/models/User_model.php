@@ -6,7 +6,7 @@ class User_model {
     }
 
     public function register($data) {
-        $this->db->query('INSERT INTO users (username, email, password) VALUES(:username, :email, :password)');
+        $this->db->query('INSERT INTO user (username, email, password) VALUES(:username, :email, :password)');
 
         //Bind values
         $this->db->bind(':username', $data['username']);
@@ -22,7 +22,7 @@ class User_model {
     }
 
     public function login($username, $password) {
-        $this->db->query('SELECT * FROM users WHERE username = :username');
+        $this->db->query('SELECT * FROM user WHERE username = :username');
 
         //Bind value
         $this->db->bind(':username', $username);
@@ -41,7 +41,7 @@ class User_model {
     //Find user by email. Email is passed in by the Controller.
     public function findUserByEmail($email) {
         //Prepared statement
-        $this->db->query('SELECT * FROM users WHERE email = :email');
+        $this->db->query('SELECT * FROM user WHERE email = :email');
 
         //Email param will be binded with the email variable
         $this->db->bind(':email', $email);

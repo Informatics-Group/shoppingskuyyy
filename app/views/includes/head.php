@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-<<<<<<< HEAD
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +14,189 @@
   <link rel="stylesheet" hreF="<?= URLROOT;?>/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= URLROOT;?>/css/style.css">
 
-  <!-- js -->
-=======
-  <!-- <link rel="stylesheet" href="../app/lib/bootstrap/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" hreF="<?= URLROOT;?>/css/bootstrap.min.css">
+  <style>
+    body{
+      overflow-x: hidden;
+      font-family: "Roboto", sans-serif;
+    }
+    body::-webkit-scrollbar {
+      width: 0.25rem;
+    }
 
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
+    body::-webkit-scrollbar-track {
+      background: rgb(34, 40, 49);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: rgb(240, 84, 84);
+    }
+
+    ul::-webkit-scrollbar {
+      height: 0.25rem;
+    }
+
+    ul::-webkit-scrollbar-track {
+      background: rgb(34, 40, 49);
+    }
+
+    ul::-webkit-scrollbar-thumb {
+      background: rgb(240, 84, 84);
+    }
+
+    .button-primary {
+      background-color: rgb(253, 0, 84); /* maroon */
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-secondary {
+      background-color: rgb(253, 0, 84); /* maroon */
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-secondary:hover {
+      background-color: rgb(220, 0, 56); /* maroon */
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-small{
+      background-color: rgb(253, 0, 84); /* Red velvet */
+      border: none;
+      color: white;
+      height: 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-small:hover {
+      background-color: rgb(253, 0, 84); /* maroon */
+      border: none;
+      color: white;
+      height: 0.5rem;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-logout{
+      background-color: rgb(240, 84, 84);
+    }
+
+    .dark-overlay::after {
+      content:"";
+      display:block;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      background:rgba(0,0,0,0.2);
+    }
+
+    /* start of slider product */
+    .story-container ul {
+      list-style-type: none;
+      user-select: none;
+      display: flex;
+      overflow-y: auto;
+      padding: 0 0 1rem 2rem;
+      background-color: rgb(239, 240, 255);
+    }
+
+    .story-text{
+      color: rgba(255, 255, 255, .85);
+      font-weight: 300;
+      font-size: 15px;
+      max-width: 85px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 5px;
+    }
+
+    .story-container ul li {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .story-container ul li:first-child {
+      padding-left: 20px;
+    }
+
+    .story-container ul li:last-child {
+      padding-right: 20px;
+    }
+
+    .story-container ul li .story {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 1px;
+      position: relative;
+    }
+
+    .story-container ul li.has-story .story {
+      padding: 2px;
+      background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+    }
+
+    .story-container ul li .story img {
+      padding: 4px;
+      background: currentColor;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+
+    .story-container ul li span{
+      color: rgba(255, 255, 255, .85);
+      font-weight: 300;
+      font-size: 15px;
+      max-width: 85px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 5px;
+    }
+
+    /* end of slider product */
+  </style>
+
+  <!-- js -->
   <script src="<?= URLROOT; ?>/js/bootstrap.min.js"></script>
-  
+
   <title><?= $data['judul']; ?></title>
 </head>
 <body>
-<<<<<<< HEAD
-=======
-  
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
-    <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom fixed-top bg-white">
       <div class="col-3">
         <a href="<?= URLROOT; ?>/index" class="ps-3 text-dark text-decoration-none">
           <strong>ShoppingSkuy</strong>
@@ -38,11 +204,22 @@
       </div>
       <div class="col-6">
         <form class="w-100">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cari produk atau toko di ShoppingSkuyyy">
+            <div class="input-group-btn">
+              <button class="btn" type="submit" style="background-color: rgb(221, 221, 221);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.571" height="18.711" viewBox="0 0 18.571 18.711">
+                  <g id="ic-actions-search" transform="translate(-2.969 -2.4)">
+                    <circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(6.79 3.15)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+                    <line id="Line_50" data-name="Line 50" x1="4.88" y2="4.88" transform="translate(4.03 15.17)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
       <div class="col-3 text-end">
-<<<<<<< HEAD
         <?php if(isset($_SESSION['user_id'])): ?>
           <a href="<?= URLROOT;?>/cart" class="text-decoration-none me-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="21.081" height="18.165" viewBox="0 0 21.081 18.165">
@@ -54,7 +231,7 @@
               </g>
             </svg>
           </a>
-          <a href="<?= URLROOT;?>/message" class="text-decoration-none me-4">
+          <a href="<?= URLROOT;?>/message" class="text-decoration-none me-4 border-right">
             <svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="15.5" viewBox="0 0 21.5 15.5">
               <g id="ic-contact-mail" transform="translate(-1.25 -4.25)">
                 <rect id="Rectangle_25" data-name="Rectangle 25" width="20" height="14" rx="2" transform="translate(2 5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
@@ -70,14 +247,15 @@
               </g>
             </svg>
           </a>
-          <a href="<?= URLROOT;?>/users/logout" class="btn btn-primary me-3">Log out</a>
+          <a href="<?= URLROOT;?>/users/logout" class="me-3">
+          <button class="button-secondary">
+            Log out
+          </button></a>
         <?php else :?>
-          <a href="<?= URLROOT;?>/users/login" class="btn btn-primary me-3">Sign-in</a>
+          <a href="<?= URLROOT;?>/users/login" class="me-3">
+          <button class="button-secondary">
+            Sign-in
+          </button></a>
         <?php endif; ?>
-=======
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary me-3">Sign-up</button>
->>>>>>> 4da6c69bab6385b5f99c0655f9d8dad87551c977
       </div>
-    </div>
-  
+    </div><br><br><br>
