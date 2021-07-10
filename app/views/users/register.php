@@ -1,39 +1,49 @@
 <?php
-   require APPROOT . '/views/includes/head.php';
+require APPROOT . '/views/includes/head.php';
 ?>
-
-<div class="container-login">
-    <div class="wrapper-login">
-        <h2>Register</h2>
-
-            <form
-                id="register-form"
-                method="POST"
-                action="<?php echo URLROOT; ?>/users/register"
-                >
-            <input type="text" placeholder="Username *" name="username">
+<div class="container">
+  <div class="col d-flex justify-content-center mt-4">
+    <div class="card card-signout flex-row my-3">
+      <div class="card-body">
+        <h5 class="card-title text-center fw-bold">Register Now</h5>
+        <form class="form-signout" method="POST" action="<?php echo URLROOT; ?>/users/register">
+          <div class="form-label-group">
+            <input type="text" id="inputUserame" class="form-control" placeholder="Username *" name="username" autofocus>
+            <label for="inputUserame">Username</label>
             <span class="invalidFeedback">
-                <?php echo $data['usernameError']; ?>
+              <?php echo $data['usernameError']; ?>
             </span>
+          </div>
 
-            <input type="email" placeholder="Email *" name="email">
+          <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email *" name="email">
+            <label for="inputEmail">Email address</label>
             <span class="invalidFeedback">
-                <?php echo $data['emailError']; ?>
+              <?php echo $data['emailError']; ?>
             </span>
-
-            <input type="password" placeholder="Password *" name="password">
+          </div>
+          <hr>
+          <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password *" name="password">
+            <label for="inputPassword">Password</label>
             <span class="invalidFeedback">
-                <?php echo $data['passwordError']; ?>
+              <?php echo $data['passwordError']; ?>
             </span>
+          </div>
 
-            <input type="password" placeholder="Confirm Password *" name="confirmPassword">
+          <div class="form-label-group">
+            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password *" name="confirmPassword">
+            <label for="inputConfirmPassword">Confirm password</label>
             <span class="invalidFeedback">
-                <?php echo $data['confirmPasswordError']; ?>
+              <?php echo $data['confirmPasswordError']; ?>
             </span>
-
-            <button id="submit" type="submit" value="submit">Submit</button>
-
-            <p class="options">Not registered yet? <a href="<?php echo URLROOT; ?>/users/register">Create an account!</a></p>
+          </div>
+          <div class="text-center mt-4 d-flex justify-content-between">
+            <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-lg btn-outline-primary btn-block text-uppercase" type="submit" value="submit">Sign-in?</a>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">Register</button>
+          </div>
         </form>
+      </div>
     </div>
+  </div>
 </div>

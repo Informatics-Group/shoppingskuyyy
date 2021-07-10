@@ -1,25 +1,32 @@
 <?php
-   require APPROOT . '/views/includes/head.php';
+require APPROOT . '/views/includes/head.php';
 ?>
-
-<div class="container-login">
-    <div class="wrapper-login">
-        <h2>Sign in</h2>
-
-        <form action="<?php echo URLROOT; ?>/users/login" method ="POST">
-            <input type="text" placeholder="Username *" name="username">
+<div class="container">
+  <div class="col d-flex justify-content-center mt-5">
+    <div class="card card-signin flex-row my-3 mt-5">
+      <div class="card-body">
+        <h5 class="card-title text-center fw-bold">Login</h5>
+        <form class="form-signin" action="<?php echo URLROOT; ?>/users/login" method="POST">
+          <div class="form-label-group">
+            <input type="text" id="inputUserame" class="form-control" placeholder="Username *" name="username" autofocus>
+            <label for="inputUserame">Username or Email</label>
             <span class="invalidFeedback">
-                <?php echo $data['usernameError']; ?>
+              <?php echo $data['usernameError']; ?>
             </span>
-
-            <input type="password" placeholder="Password *" name="password">
+          </div>
+          <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password *" name="password">
+            <label for="inputPassword">Password</label>
             <span class="invalidFeedback">
-                <?php echo $data['passwordError']; ?>
+              <?php echo $data['passwordError']; ?>
             </span>
-
-            <button id="submit" type="submit" value="submit">Submit</button>
-
-            <p class="options">Not registered yet? <a href="<?php echo URLROOT; ?>/users/register">Create an account!</a></p>
+          </div>
+          <div class="text-center mt-4 d-flex justify-content-between">
+            <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-lg btn-outline-primary btn-block text-uppercase" type="submit" value="submit">Register?</a>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" value="submit">Sign-in</button>
+          </div>
         </form>
+      </div>
     </div>
+  </div>
 </div>
