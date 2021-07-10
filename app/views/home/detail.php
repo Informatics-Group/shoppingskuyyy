@@ -1,8 +1,8 @@
-<div class="container mt-4" style="background-color: rgb(239, 240, 255);">
-  <div class="row">
+<div class="container mt-5 mb-5" style="background-color: rgb(239, 240, 255);">
+  <div class="row mt-1">
     <!--Detail barang-->
     <div class="card">
-      <div class="card-body row m-0">
+      <div class="card-body row m-0 my-4">
         <div class="col-sm-5 col-md-6">
           <!--bagian kiri-->
           <div class="row">
@@ -17,16 +17,20 @@
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 pe-2">
           <!--bagian kanan-->
           <div class="row mt-2">
-            <h2>judul</h2>
+            <h2 style="overflow: hidden;text-overflow: ellipsis;max-width: 66ch;"><?= $data['getProdutDetailById']['product_name']; ?></h2>
           </div>
           <div class="row">
-            <h6>terual</h6>
+            <span>Dilihat <?= $data['getProdutDetailById']['prd_open_count']; ?></span>
+            <span>Terjual <?= $data['getProdutDetailById']['prd_buy_count']; ?> produk</span>
           </div>
           <div class="row mt-3">
-            <h3>harga</h3>
+            <h3>Rp. <?php $nilai = $data['getProdutDetailById']['prd_prc'];
+                    $subtotal =  number_format($nilai, 0, ',', '.');
+                    echo $subtotal; ?>
+            </h3>
           </div>
           <div class="row mt-3">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae officiis earum ullam quis eaque corrupti eligendi non distinctio debitis, quisquam nam voluptate voluptas, quia quaerat doloribus quasi adipisci tempora consequatur.</p>
+            <p><?= $data['getProdutDetailById']['prd_desc']; ?></p>
           </div>
           <div class="row">
             <div class="col-4">
@@ -45,7 +49,7 @@
             </div>
           </div>
           <div class="row mt-4 px-3">
-            <button class="btn btn-primary">ADD TO CART</button>
+            <a href="<?= URLROOT; ?>/home/addtocart/<?= $data['getProdutDetailById']['id']; ?>" class="btn btn-primary">ADD TO CART</a>
           </div>
           <div class="row mt-1 px-3">
             <button class="btn btn-danger">ADD TO WISHLIST</button>
@@ -608,3 +612,4 @@
 
     </div>
   </div>
+</div>

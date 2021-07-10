@@ -27,4 +27,11 @@ class Product_model
     $this->db->query($query);
     return $this->db->resultSet();
   }
+
+  public function getProdutDetailById($id)
+  {
+    $this->db->query('SELECT * FROM product WHERE id=:id');
+    $this->db->bind('id', $id);
+    return $this->db->single();
+  }
 }

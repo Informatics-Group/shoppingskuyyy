@@ -16,9 +16,10 @@
 
   <style>
     :root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: .75rem;
+      --input-padding-x: 1.5rem;
+      --input-padding-y: .75rem;
     }
+
     body {
       overflow-x: hidden;
       font-family: "Roboto", sans-serif;
@@ -142,9 +143,10 @@
       font-size: 12px;
       color: #777;
     }
+
     /* end of login register system */
 
-        /* start login register system */
+    /* start login register system */
     .card-signin {
       border: 0;
       border-radius: 1rem;
@@ -176,6 +178,7 @@
       padding: 1rem 4rem;
       transition: all 0.2s;
     }
+
     /* end of login register system */
 
     .button-primary {
@@ -328,6 +331,12 @@
     }
 
     /* end of slider product */
+
+    /* footer */
+    .site-footer {
+      background: rgb(239, 240, 255);
+    }
+    /* end of footer */
   </style>
 
   <!-- js -->

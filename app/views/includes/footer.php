@@ -1,8 +1,6 @@
-  <footer class="sticky-footer bg-white shadow-lg mt-5 py-4">
-    <div class="container my-auto">
-      <div class="copyright text-center my-auto">
-        <span>Copyright &copy; ShoppingSkuy 2020</span>
-      </div>
+  <footer class="bg-white py-4 mt-4">
+    <div class="copyright text-center my-auto">
+      <span>Copyright &copy; ShoppingSkuy 2020</span>
     </div>
   </footer>
   <script src="<?= URLROOT; ?>/js/bootstrap.bundle.min.js"></script>
