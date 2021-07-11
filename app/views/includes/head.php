@@ -22,7 +22,7 @@
 
     body {
       overflow-x: hidden;
-      font-family: "Roboto", sans-serif;
+      font-family: "Open Sans", sans-serif;
     }
 
     body::-webkit-scrollbar {
@@ -47,6 +47,14 @@
 
     ul::-webkit-scrollbar-thumb {
       background: rgb(240, 84, 84);
+    }
+
+    .logo {
+      background: linear-gradient(to right, rgb(253, 0, 84) 0%, rgb(251, 208, 158) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.2rem;
+      font-family: 'Arial Black', 'serif';
     }
 
     /* start login register system */
@@ -205,6 +213,7 @@
       display: inline-block;
       font-size: 16px;
       cursor: pointer;
+      transition: 0.5s;
     }
 
     .button-secondary:hover {
@@ -217,6 +226,25 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-search {
+      background-color: rgb(239, 240, 255);
+      /* maroon */
+      border: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .button-search:hover {
+      background-color: rgb(209, 210, 225);
+      /* maroon */
+      border: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
       cursor: pointer;
     }
 
@@ -245,10 +273,6 @@
       display: inline-block;
       font-size: 16px;
       cursor: pointer;
-    }
-
-    .button-logout {
-      background-color: rgb(240, 84, 84);
     }
 
     .dark-overlay::after {
@@ -336,6 +360,7 @@
     .site-footer {
       background: rgb(239, 240, 255);
     }
+
     /* end of footer */
   </style>
 
@@ -349,7 +374,7 @@
   <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom fixed-top bg-white">
     <div class="col-3">
       <a href="<?= URLROOT; ?>/index" class="ps-3 text-dark text-decoration-none">
-        <strong>ShoppingSkuy</strong>
+        <span class="logo">ShoppingSkuy</span>
       </a>
     </div>
     <div class="col-6">
@@ -357,7 +382,7 @@
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Cari produk atau toko di ShoppingSkuyyy">
           <div class="input-group-btn">
-            <button class="btn" type="submit" style="background-color: rgb(221, 221, 221);">
+            <button class="button-search" type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="18.571" height="18.711" viewBox="0 0 18.571 18.711">
                 <g id="ic-actions-search" transform="translate(-2.969 -2.4)">
                   <circle id="Ellipse_12" data-name="Ellipse 12" cx="7" cy="7" r="7" transform="translate(6.79 3.15)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5" />
@@ -371,6 +396,7 @@
     </div>
     <div class="col-3 text-end">
       <?php if (isset($_SESSION['user_id'])) : ?>
+        <!-- cart -->
         <a href="<?= URLROOT; ?>/cart" class="text-decoration-none me-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="21.081" height="18.165" viewBox="0 0 21.081 18.165">
             <g id="ic-construction-coasters" transform="translate(-1.549 -3.455)">
@@ -381,6 +407,7 @@
             </g>
           </svg>
         </a>
+        <!-- message -->
         <a href="<?= URLROOT; ?>/message" class="text-decoration-none me-4 border-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="15.5" viewBox="0 0 21.5 15.5">
             <g id="ic-contact-mail" transform="translate(-1.25 -4.25)">
@@ -389,6 +416,7 @@
             </g>
           </svg>
         </a>
+        <!-- profile -->
         <a href="<?= URLROOT; ?>/profile" class="text-decoration-none me-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="19.843" height="21.692" viewBox="0 0 19.843 21.692">
             <g id="ic-actions-user" transform="translate(-2.078 -1.23)">
@@ -397,6 +425,7 @@
             </g>
           </svg>
         </a>
+        <!-- logout -->
         <a href="<?= URLROOT; ?>/users/logout" class="me-3">
           <button class="button-secondary">
             Log out

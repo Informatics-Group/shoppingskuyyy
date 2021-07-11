@@ -17,16 +17,28 @@
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 pe-2">
           <!--bagian kanan-->
           <div class="row mt-2">
-            <h2 style="overflow: hidden;text-overflow: ellipsis;max-width: 66ch;"><?= $data['getProdutDetailById']['product_name']; ?></h2>
+            <h2 class="fw-bold" style="overflow: hidden;text-overflow: ellipsis;max-width: 66ch;"><?= $data['getProdutDetailById']['product_name']; ?></h2>
           </div>
-          <div class="row">
-            <span>Dilihat <?= $data['getProdutDetailById']['prd_open_count']; ?></span>
-            <span>Terjual <?= $data['getProdutDetailById']['prd_buy_count']; ?> produk</span>
+          <div class="d-flex justify-content-start">
+            <div class="col">
+              <span class="m-0">4.6<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pe-1">
+                  <g id="Group_503" data-name="Group 503" transform="translate(-413)">
+                    <g id="Icons_Actions_ic-actions-star-5" data-name="Icons / Actions / ic-actions-star" transform="translate(413)">
+                      <rect id="Rectangle_160-5" data-name="Rectangle 160" width="24" height="24" fill="none" />
+                      <g id="ic-actions-star-5" data-name="ic-actions-star" transform="translate(1.954 2.42)">
+                        <path id="Path_38-5" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
+                      </g>
+                    </g>
+                  </g>
+              </span>
+              <span class="mx-3"><?= $data['getProdutDetailById']['prd_buy_count']; ?> terjual</span>
+              <span class="m-0"><?= $data['getProdutDetailById']['prd_open_count']; ?> views</span>
+            </div>
           </div>
-          <div class="row mt-3">
-            <h3>Rp. <?php $nilai = $data['getProdutDetailById']['prd_prc'];
-                    $subtotal =  number_format($nilai, 0, ',', '.');
-                    echo $subtotal; ?>
+          <div class="row mt-3 pt-2" style="background-color: rgb(239, 240, 255);">
+            <h3 class="fw-bold">Rp. <?php $nilai = $data['getProdutDetailById']['prd_prc'];
+                                    $subtotal =  number_format($nilai, 0, ',', '.');
+                                    echo $subtotal; ?>
             </h3>
           </div>
           <div class="row mt-3">
@@ -36,23 +48,19 @@
             <div class="col-4">
               Quantity
             </div>
-            <div class="col-4">
-              Size
-            </div>
           </div>
           <div class="row">
-            <div class="col-4">
-              <input type="number" class="form-control">
-            </div>
-            <div class="col-4">
-              <input type="number" class="form-control">
-            </div>
+            <form action="<?= URLROOT; ?>/home/addtocart/<?= $data['getProdutDetailById']['id']; ?>" method="POST">
+              <div class="col-4">
+                <input type="number" class="form-control" name="quantity">
+              </div>
           </div>
           <div class="row mt-4 px-3">
-            <a href="<?= URLROOT; ?>/home/addtocart/<?= $data['getProdutDetailById']['id']; ?>" class="btn btn-primary">ADD TO CART</a>
+            <button class="btn btn-primary" type="submit" name="buy">ADD TO CART</button>
           </div>
           <div class="row mt-1 px-3">
             <button class="btn btn-danger">ADD TO WISHLIST</button>
+            </form>
           </div>
         </div>
       </div>

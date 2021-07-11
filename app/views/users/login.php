@@ -2,8 +2,8 @@
 require APPROOT . '/views/includes/head.php';
 ?>
 <div class="container">
-  <div class="col d-flex justify-content-center mt-5">
-    <div class="card card-signin flex-row my-3 mt-5">
+  <div class="col d-flex justify-content-center mt-5 mb-5">
+    <div class="card card-signin flex-row my-3 mt-5 mb-4">
       <div class="card-body">
         <h5 class="card-title text-center fw-bold">Login</h5>
         <form class="form-signin" action="<?php echo URLROOT; ?>/users/login" method="POST">

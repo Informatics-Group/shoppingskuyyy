@@ -126,7 +126,7 @@
             <div class="col-sm-7 p-0">
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
-                <p class="card-text mx-0 mt-0 mb-1">Rp. <?php $nilai = $product['prd_prc'];
+                <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
                                                         $subtotal =  number_format($nilai, 0, ',', '.');
                                                         echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted"><?= $product['prd_date']; ?></small></p>
@@ -163,7 +163,7 @@
             <div class="col-sm-7 p-0">
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
-                <p class="card-text mx-0 mt-0 mb-1">Rp. <?php $nilai = $product['prd_prc'];
+                <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
                                                         $subtotal =  number_format($nilai, 0, ',', '.');
                                                         echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted">Dilihat <?= $product['prd_open_count']; ?> kali</small></p>
@@ -200,7 +200,7 @@
             <div class="col-sm-7 p-0">
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
-                <p class="card-text mx-0 mt-0 mb-1">Rp. <?php $nilai = $product['prd_prc'];
+                <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
                                                         $subtotal =  number_format($nilai, 0, ',', '.');
                                                         echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted"><?= $product['prd_buy_count']; ?> terjual</small></p>

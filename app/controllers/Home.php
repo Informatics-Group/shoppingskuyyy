@@ -24,14 +24,23 @@ class Home extends Controller
 
   public function addtocart($id)
   {
+    if (isset($_POST['buy'])) {
+      $quantity = $_POST['quantity'];
+      $_SESSION["newcart"][$id] = $quantity;
+    }
+    //echo "<pre>";
+    //print_r($_SESSION['newcart']);
+    //echo "</pre>";
+    header('location:' . URLROOT . '/home/detail/' . $id);
+  }
+
+  public function addtocartsingle($id)
+  {
     if (isset($_SESSION['newcart'][$id])) {
       $_SESSION['newcart'][$id] += 1;
     } else {
       $_SESSION['newcart'][$id] = 1;
     }
-    echo "<pre>";
-    print_r($_SESSION['newcart']);
-    echo "</pre>";
     header('location:' . URLROOT . '/home/detail/' . $id);
   }
 }
