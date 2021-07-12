@@ -21,7 +21,7 @@
           </div>
           <div class="d-flex justify-content-start">
             <div class="col">
-              <span class="m-0">4.6<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pe-1">
+              <span class="m-0"><u>4.6</u><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pe-1">
                   <g id="Group_503" data-name="Group 503" transform="translate(-413)">
                     <g id="Icons_Actions_ic-actions-star-5" data-name="Icons / Actions / ic-actions-star" transform="translate(413)">
                       <rect id="Rectangle_160-5" data-name="Rectangle 160" width="24" height="24" fill="none" />
@@ -31,7 +31,7 @@
                     </g>
                   </g>
               </span>
-              <span class="mx-3"><?= $data['getProdutDetailById']['prd_buy_count']; ?> terjual</span>
+              <span class="mx-3"><u><?= $data['getProdutDetailById']['prd_buy_count']; ?></u> terjual</span>
               <span class="m-0"><?= $data['getProdutDetailById']['prd_open_count']; ?> views</span>
             </div>
           </div>
@@ -500,124 +500,40 @@
       <div class="row mt-4">
         <div class="col-3">
           <!--product 1-->
-          <div class="card">
-            <a class="text-center" href=""><img class="card-img-center p-3 " style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
-            <div class="card-body pt-0">
+          <div class="card" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);">
+            <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
+            <div class="card-body pt-0 pe-4">
               <div class="row">
                 <span class="">Space for product name belong here</span>
               </div>
               <div class="row">
-                <span class=" text-primary fw-bold" style="font-size: 1.2rem;">harga</span>
+                <span class=" text-primary fw-bold" style="font-size: 1.2rem;">Rp.20.000</span>
               </div>
               <div class="row mt-3">
                 <div class="col">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="24" viewBox="0 0 128 24">
-                    <g id="Group_503" data-name="Group 503" transform="translate(-413)">
-                      <g id="Icons_Actions_ic-actions-star" data-name="Icons / Actions / ic-actions-star" transform="translate(517)">
-                        <rect id="Rectangle_160" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#ddd" fill-rule="evenodd" />
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pe-1">
+                      <g id="Group_503" data-name="Group 503" transform="translate(-413)">
+                        <g id="Icons_Actions_ic-actions-star-5" data-name="Icons / Actions / ic-actions-star" transform="translate(413)">
+                          <rect id="Rectangle_160-5" data-name="Rectangle 160" width="24" height="24" fill="none" />
+                          <g id="ic-actions-star-5" data-name="ic-actions-star" transform="translate(1.954 2.42)">
+                            <path id="Path_38-5" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
+                          </g>
                         </g>
                       </g>
-                      <g id="Icons_Actions_ic-actions-star-2" data-name="Icons / Actions / ic-actions-star" transform="translate(491)">
-                        <rect id="Rectangle_160-2" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-2" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-2" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-3" data-name="Icons / Actions / ic-actions-star" transform="translate(465)">
-                        <rect id="Rectangle_160-3" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-3" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-3" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-4" data-name="Icons / Actions / ic-actions-star" transform="translate(439)">
-                        <rect id="Rectangle_160-4" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-4" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-4" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-5" data-name="Icons / Actions / ic-actions-star" transform="translate(413)">
-                        <rect id="Rectangle_160-5" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-5" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-5" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
+                    </svg>4.6
+                  </span>
                 </div>
                 <div class="col text-end">
                   <span style="font-size: 0.85rem;"><a href="" class=" text-muted">100 reviews</a></span>
                 </div>
               </div>
               <div class="row px-2 mt-3">
-                <input type="number" class="form-control col m-1">
-                <a href="" class="btn btn-primary col m-1 form-control">Add to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <!--product 1-->
-          <div class="card">
-            <a class="text-center" href=""><img class="card-img-center p-3 " style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
-            <div class="card-body pt-0">
-              <div class="row">
-                <span class="">Space for product name belong here</span>
-              </div>
-              <div class="row">
-                <span class=" text-primary fw-bold" style="font-size: 1.2rem;">harga</span>
-              </div>
-              <div class="row mt-3">
-                <div class="col">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="110" height="24" viewBox="0 0 128 24">
-                    <g id="Group_503" data-name="Group 503" transform="translate(-413)">
-                      <g id="Icons_Actions_ic-actions-star" data-name="Icons / Actions / ic-actions-star" transform="translate(517)">
-                        <rect id="Rectangle_160" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#ddd" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-2" data-name="Icons / Actions / ic-actions-star" transform="translate(491)">
-                        <rect id="Rectangle_160-2" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-2" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-2" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-3" data-name="Icons / Actions / ic-actions-star" transform="translate(465)">
-                        <rect id="Rectangle_160-3" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-3" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-3" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-4" data-name="Icons / Actions / ic-actions-star" transform="translate(439)">
-                        <rect id="Rectangle_160-4" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-4" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-4" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                      <g id="Icons_Actions_ic-actions-star-5" data-name="Icons / Actions / ic-actions-star" transform="translate(413)">
-                        <rect id="Rectangle_160-5" data-name="Rectangle 160" width="24" height="24" fill="none" />
-                        <g id="ic-actions-star-5" data-name="ic-actions-star" transform="translate(1.954 2.42)">
-                          <path id="Path_38-5" data-name="Path 38" d="M11,3.19a1.08,1.08,0,0,1,2.06,0l1.86,5.72h6a1.09,1.09,0,0,1,.64,2l-4.87,3.53,1.86,5.73a1.08,1.08,0,0,1-1.67,1.21L12,17.81,7.13,21.35a1.08,1.08,0,0,1-1.67-1.21l1.86-5.73L2.45,10.88a1.09,1.09,0,0,1,.64-2h6Z" transform="translate(-1.959 -2.435)" fill="#fba422" fill-rule="evenodd" />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div class="col text-end">
-                  <span style="font-size: 0.85rem;"><a href="" class=" text-muted">100 reviews</a></span>
-                </div>
-              </div>
-              <div class="row px-2 mt-3">
-                <input type="number" class="form-control col m-1">
-                <a href="" class="btn btn-primary col m-1 form-control">Add to Cart</a>
+                <a href="" class="button-secondary m-1 form-control">Detail</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

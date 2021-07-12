@@ -249,7 +249,7 @@
       <!--product 1-->
       <div class="card" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);">
         <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
-        <div class="card-body pt-0">
+        <div class="card-body pt-0 pe-4">
           <div class="row">
             <span class="">Space for product name belong here</span>
           </div>
