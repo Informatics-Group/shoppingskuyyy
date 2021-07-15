@@ -13,3 +13,11 @@ Download repositories. put the folder to your server
 - Open localhost/shoppingskuyyy/home.
 - Click Sign-in button on top right.
 - Register and login with your account.
+# Other Information
+Project status: On-going
+Implemented UI:
+- Home (https://shoppingskuy.xyz/home/index)
+- Product Details (https://shoppingskuy.xyz/home/detail/14)
+- Register Account (https://shoppingskuy.xyz/users/register)
+- Login Account (https://shoppingskuy.xyz/users/login)
+- Checkout (https://shoppingskuy.xyz/home/checkout)
