@@ -12,7 +12,7 @@
             </div>
             <div class="carousel-caption text-start">
               <strong>
-                <h1 class="font-weight-bold">Sneakers</h1>
+                <h1 class="fw-bold">Sneakers</h1>
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officia, voluptate eos aliquid
                 esse, molestias iste non, nisi deleniti voluptatem commodi incidunt corporis impedit?</p>
@@ -25,7 +25,7 @@
             </div>
             <div class="carousel-caption text-start">
               <strong>
-                <h1 class="font-weight-bold">Gaming Gear</h1>
+                <h1 class="fw-bold">Gaming Gear</h1>
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eligendi, eius vel aliquam corrupti
                 laudantium, culpa quasi iusto maiores praesentium eos delectus at. Totam, doloremque.</p>
@@ -38,7 +38,7 @@
             </div>
             <div class="carousel-caption text-start">
               <strong>
-                <h1 class="font-weight-bold">Shirt</h1>
+                <h1 class="fw-bold">Shirt</h1>
               </strong>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi eaque tempora dolor! Voluptas unde
                 itaque soluta in corrupti. Perspiciatis eum fugiat alias officiis nemo ad!</p>
@@ -51,7 +51,7 @@
             </div>
             <div class="carousel-caption text-start">
               <strong>
-                <h1 class="font-weight-bold">Electronic</h1>
+                <h1 class="fw-bold">Electronic</h1>
               </strong>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi eligendi voluptatem?
                 Voluptates expedita porro fugiat ex amet! Laboriosam nobis ex accusantium eos voluptas iste.</p>
@@ -64,7 +64,7 @@
             </div>
             <div class="carousel-caption text-start">
               <strong>
-                <h1 class="font-weight-bold">Beauty</h1>
+                <h1 class="fw-bold">Beauty</h1>
               </strong>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit quidem itaque quasi sequi
                 alias est, debitis, accusantium molestiae perspiciatis consequuntur assumenda sunt.</p>
@@ -127,10 +127,14 @@
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
                 <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
-                                                        $subtotal =  number_format($nilai, 0, ',', '.');
-                                                        echo $subtotal; ?></p>
+                                                                      $subtotal =  number_format($nilai, 0, ',', '.');
+                                                                      echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted"><?= $product['prd_date']; ?></small></p>
-                <a href="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>"><button class="button-secondary w-100">Cek Detail</button></a>
+                <form action="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>" method="POST">
+                  <input type="hidden" name="id" value="<?= $product['id']; ?>" hidden>
+                  <input type="hidden" value="<?= $product['prd_open_count'] + 1; ?>" name="prd_open_count">
+                  <button class="button-secondary w-100" type="submit">Cek Detail</button>
+                </form>
               </div>
             </div>
           </div>
@@ -164,10 +168,14 @@
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
                 <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
-                                                        $subtotal =  number_format($nilai, 0, ',', '.');
-                                                        echo $subtotal; ?></p>
+                                                                      $subtotal =  number_format($nilai, 0, ',', '.');
+                                                                      echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted">Dilihat <?= $product['prd_open_count']; ?> kali</small></p>
-                <a href="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>"><button class="button-secondary w-100">Cek Detail</button></a>
+                <form action="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>" method="POST">
+                  <input type="hidden" name="id" value="<?= $product['id']; ?>" hidden>
+                  <input type="hidden" value="<?= $product['prd_open_count'] + 1; ?>" name="prd_open_count">
+                  <button class="button-secondary w-100" type="submit">Cek Detail</button>
+                </form>
               </div>
             </div>
           </div>
@@ -201,10 +209,14 @@
               <div class="card-body">
                 <h5 class="card-title m-0" style="font-size:1rem;font-weight:bold;inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;"><?= $product['product_name']; ?></h5>
                 <p class="card-text mx-0 mt-0 mb-1 text-primary">Rp. <?php $nilai = $product['prd_prc'];
-                                                        $subtotal =  number_format($nilai, 0, ',', '.');
-                                                        echo $subtotal; ?></p>
+                                                                      $subtotal =  number_format($nilai, 0, ',', '.');
+                                                                      echo $subtotal; ?></p>
                 <p class="m-0"><small class="text-muted"><?= $product['prd_buy_count']; ?> terjual</small></p>
-                <a href="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>"><button class="button-secondary w-100">Cek Detail</button></a>
+                <form action="<?= URLROOT; ?>/home/detail/<?= $product['id']; ?>" method="POST">
+                  <input type="hidden" name="id" value="<?= $product['id']; ?>" hidden>
+                  <input type="hidden" value="<?= $product['prd_open_count'] + 1; ?>" name="prd_open_count">
+                  <button class="button-secondary w-100" type="submit">Cek Detail</button>
+                </form>
               </div>
             </div>
           </div>
@@ -249,7 +261,7 @@
       <!--product 1-->
       <div class="card" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);">
         <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
-        <div class="card-body pt-0 pe-4">
+        <div class="card-body pt-0 ">
           <div class="row">
             <span class="">Space for product name belong here</span>
           </div>
@@ -269,13 +281,14 @@
                   </g>
                 </svg>4.6
               </span>
+              <small value></small>
             </div>
             <div class="col text-end">
               <span style="font-size: 0.85rem;"><a href="" class=" text-muted">100 reviews</a></span>
             </div>
           </div>
           <div class="row px-2 mt-3">
-            <a href="" class="button-secondary m-1 form-control">Detail</a>
+            <button class="button-secondary w-100">Detail</button>
           </div>
         </div>
       </div>

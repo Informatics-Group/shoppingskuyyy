@@ -26,10 +26,11 @@ class User_model
 
 	public function login($username, $password)
 	{
-		$this->db->query('SELECT * FROM user WHERE username = :username');
+		$this->db->query('SELECT * FROM user WHERE username = :username OR email = :email');
 
 		//Bind value
 		$this->db->bind(':username', $username);
+		$this->db->bind(':email', $username);
 
 		$row = $this->db->single();
 
