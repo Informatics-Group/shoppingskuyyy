@@ -95,7 +95,7 @@
     </div>
     <div class="col" id="main">
       <div class="row p-2 me-2" style="background-color: white;border: 1px solid rgba(34, 40, 49, .3);">
-        <h4>Cart</h4>
+        <h4 style="color: aqua;">Cart</h4>
         <div class="row">
           <div class="col">
             <div class="row">
