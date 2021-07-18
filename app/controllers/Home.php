@@ -4,7 +4,7 @@ class Home extends Controller
 
   public function index()
   { // method defaultnya
-    $data['judul'] = 'Home';
+    $data['judul'] = 'Home | ' . SITENAME;
     $data['getProductByLatestUpload'] = json_decode(json_encode($this->model('Product_model')->getProductByLatestUpload()), true);
     $data['getProductByHighestView'] = json_decode(json_encode($this->model('Product_model')->getProductByHighestView()), true);
     $data['getProductByHighestBuy'] = json_decode(json_encode($this->model('Product_model')->getProductByHighestBuy()), true);
@@ -15,7 +15,8 @@ class Home extends Controller
 
   public function detail($id)
   {
-    $data['judul'] = 'Home';
+    $data['judul'] = 'Detail ' . SITENAME;
+    $this->model('Product_model')->addViewProduct($_POST) > 0;
     $data['getProdutDetailById'] = json_decode(json_encode($this->model('Product_model')->getProdutDetailById($id)), true);
     $this->model('Product_model')->updateViewProduct($_POST) > 0;
     $this->view('includes/head', $data);
@@ -25,7 +26,11 @@ class Home extends Controller
 
   public function checkout()
   {
+<<<<<<< HEAD
     $data['judul'] = 'Home';
+=======
+    $data['judul'] = 'Checkout | ' . SITENAME;
+>>>>>>> 544aa0b412a90d035d3f6d5166f81c361b532a01
     $this->view('includes/head', $data);
     $this->view('home/checkout', $data);
     $this->view('includes/footer');

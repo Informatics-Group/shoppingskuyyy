@@ -502,7 +502,7 @@
           <!--product 1-->
           <div class="card" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);">
             <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
-            <div class="card-body pt-0 pe-4">
+            <div class="card-body pt-0">
               <div class="row">
                 <span class="">Space for product name belong here</span>
               </div>
@@ -522,13 +522,14 @@
                       </g>
                     </svg>4.6
                   </span>
+                  <small value></small>
                 </div>
                 <div class="col text-end">
                   <span style="font-size: 0.85rem;"><a href="" class=" text-muted">100 reviews</a></span>
                 </div>
               </div>
               <div class="row px-2 mt-3">
-                <a href="" class="button-secondary m-1 form-control">Detail</a>
+                <button class="button-secondary w-100">Detail</button>
               </div>
             </div>
           </div>
