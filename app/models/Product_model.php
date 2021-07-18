@@ -34,4 +34,17 @@ class Product_model
     $this->db->bind('id', $id);
     return $this->db->single();
   }
+
+  public function updateViewProduct($data)
+  {
+    $query = "UPDATE product SET :prd_open_count WHERE id = :id";
+
+    $this->db->query($query);
+    $this->db->bind('prd_open_count', $data['prd_open_count']);
+    $this->db->bind('id', $data['id']);
+
+    $this->db->execute();
+
+    return $this->db->rowCount();
+  }
 }

@@ -17,8 +17,17 @@ class Home extends Controller
   {
     $data['judul'] = 'Home';
     $data['getProdutDetailById'] = json_decode(json_encode($this->model('Product_model')->getProdutDetailById($id)), true);
+    $this->model('Product_model')->updateViewProduct($_POST) > 0;
     $this->view('includes/head', $data);
     $this->view('home/detail', $data);
+    $this->view('includes/footer');
+  }
+
+  public function checkout()
+  {
+    $data['judul'] = 'Home';
+    $this->view('includes/head', $data);
+    $this->view('home/checkout', $data);
     $this->view('includes/footer');
   }
 
