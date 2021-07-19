@@ -20,4 +20,4 @@ Implemented UI:
 - Product Details (https://shoppingskuy.xyz/home/detail/14)
 - Register Account (https://shoppingskuy.xyz/users/register)
 - Login Account (https://shoppingskuy.xyz/users/login)
-- Checkout (https://shoppingskuy.xyz/home/checkout)
+- Cart (https://shoppingskuy.xyz/cart)
