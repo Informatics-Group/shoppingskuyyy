@@ -1,103 +1,100 @@
 <!-- start landing page -->
-<div class="p-4" style="background-color: rgb(43, 32, 36);">
-  <!-- background color -->
-  <div class="row justify-content-center">
-    <!-- carousel slide -->
-    <div class="col-sm-8 d-inline-block p-0" style="width: 55%;">
-      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <div class="dark-overlay">
-              <img src="<?= URLROOT; ?>/img/shoe.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
-            </div>
-            <div class="carousel-caption text-start">
-              <strong>
-                <h1 class="fw-bold">Sneakers</h1>
-              </strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officia, voluptate eos aliquid
-                esse, molestias iste non, nisi deleniti voluptatem commodi incidunt corporis impedit?</p>
-              <button class="button-secondary">Jelajahi Sekarang</button>
-            </div>
+<div class="row justify-content-center hero-section">
+  <!-- carousel slide -->
+  <div class="col-sm-8 d-inline-block p-0" style="width: 55%;">
+    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <div class="dark-overlay">
+            <img src="<?= URLROOT; ?>/img/shoe.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="dark-overlay">
-              <img src="<?= URLROOT; ?>/img/game.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
-            </div>
-            <div class="carousel-caption text-start">
-              <strong>
-                <h1 class="fw-bold">Gaming Gear</h1>
-              </strong>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eligendi, eius vel aliquam corrupti
-                laudantium, culpa quasi iusto maiores praesentium eos delectus at. Totam, doloremque.</p>
-              <button class="button-secondary">Jelajahi Sekarang</button>
-            </div>
+          <div class="carousel-caption text-start">
+            <strong>
+              <h1 class="fw-bold">Sneakers</h1>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem officia, voluptate eos aliquid
+              esse, molestias iste non, nisi deleniti voluptatem commodi incidunt corporis impedit?</p>
+            <button class="button-secondary">Jelajahi Sekarang</button>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="dark-overlay">
-              <img src="<?= URLROOT; ?>/img/shirt.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
-            </div>
-            <div class="carousel-caption text-start">
-              <strong>
-                <h1 class="fw-bold">Shirt</h1>
-              </strong>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi eaque tempora dolor! Voluptas unde
-                itaque soluta in corrupti. Perspiciatis eum fugiat alias officiis nemo ad!</p>
-              <button class="button-secondary">Jelajahi Sekarang</button>
-            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="dark-overlay">
+            <img src="<?= URLROOT; ?>/img/game.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="dark-overlay">
-              <img src="<?= URLROOT; ?>/img/electronic.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
-            </div>
-            <div class="carousel-caption text-start">
-              <strong>
-                <h1 class="fw-bold">Electronic</h1>
-              </strong>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi eligendi voluptatem?
-                Voluptates expedita porro fugiat ex amet! Laboriosam nobis ex accusantium eos voluptas iste.</p>
-              <button class="button-secondary">Jelajahi Sekarang</button>
-            </div>
+          <div class="carousel-caption text-start">
+            <strong>
+              <h1 class="fw-bold">Gaming Gear</h1>
+            </strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eligendi, eius vel aliquam corrupti
+              laudantium, culpa quasi iusto maiores praesentium eos delectus at. Totam, doloremque.</p>
+            <button class="button-secondary">Jelajahi Sekarang</button>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="dark-overlay">
-              <img src="<?= URLROOT; ?>/img/beauty.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
-            </div>
-            <div class="carousel-caption text-start">
-              <strong>
-                <h1 class="fw-bold">Beauty</h1>
-              </strong>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit quidem itaque quasi sequi
-                alias est, debitis, accusantium molestiae perspiciatis consequuntur assumenda sunt.</p>
-              <button class="button-secondary">Jelajahi Sekarang</button>
-            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="dark-overlay">
+            <img src="<?= URLROOT; ?>/img/shirt.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
+          </div>
+          <div class="carousel-caption text-start">
+            <strong>
+              <h1 class="fw-bold">Shirt</h1>
+            </strong>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi eaque tempora dolor! Voluptas unde
+              itaque soluta in corrupti. Perspiciatis eum fugiat alias officiis nemo ad!</p>
+            <button class="button-secondary">Jelajahi Sekarang</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="dark-overlay">
+            <img src="<?= URLROOT; ?>/img/electronic.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
+          </div>
+          <div class="carousel-caption text-start">
+            <strong>
+              <h1 class="fw-bold">Electronic</h1>
+            </strong>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate commodi eligendi voluptatem?
+              Voluptates expedita porro fugiat ex amet! Laboriosam nobis ex accusantium eos voluptas iste.</p>
+            <button class="button-secondary">Jelajahi Sekarang</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="dark-overlay">
+            <img src="<?= URLROOT; ?>/img/beauty.jpg" class="d-block" style="object-fit: cover;" width="700rem" height="460rem">
+          </div>
+          <div class="carousel-caption text-start">
+            <strong>
+              <h1 class="fw-bold">Beauty</h1>
+            </strong>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit quidem itaque quasi sequi
+              alias est, debitis, accusantium molestiae perspiciatis consequuntur assumenda sunt.</p>
+            <button class="button-secondary">Jelajahi Sekarang</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- sidebar -->
-    <div class="col-sm-4 d-inline-block" style="width:11%;">
-      <div class="row">
-        <a type="button" class="p-0 text-decoration-none text-dark" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-          <div class="d-inline">
-            <img src="<?= URLROOT; ?>/img/shoe.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem">
-            <div class="carousel-caption d-none d-block">
-              <h6>Shoes</h6>
-            </div>
+  </div>
+  <!-- sidebar -->
+  <div class="col-sm-4 d-inline-block" style="width:11%;">
+    <div class="row">
+      <a type="button" class="p-0 text-decoration-none text-dark" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+        <div class="d-inline">
+          <img src="<?= URLROOT; ?>/img/shoe.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem">
+          <div class="carousel-caption d-none d-block">
+            <h6>Shoes</h6>
           </div>
-        </a>
-      </div>
-      <div class="row">
-        <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"><img src="<?= URLROOT; ?>/img/game.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
-      </div>
-      <div class="row">
-        <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"><img src="<?= URLROOT; ?>/img/shirt.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
-      </div>
-      <div class="row">
-        <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"><img src="<?= URLROOT; ?>/img/electronic.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
-      </div>
-      <div class="row">
-        <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4"><img src="<?= URLROOT; ?>/img/beauty.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
-      </div>
+        </div>
+      </a>
+    </div>
+    <div class="row">
+      <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"><img src="<?= URLROOT; ?>/img/game.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
+    </div>
+    <div class="row">
+      <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"><img src="<?= URLROOT; ?>/img/shirt.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
+    </div>
+    <div class="row">
+      <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"><img src="<?= URLROOT; ?>/img/electronic.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
+    </div>
+    <div class="row">
+      <a class="px-0 text-decoration-none text-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4"><img src="<?= URLROOT; ?>/img/beauty.jpg" style="object-fit: cover;" class="d-block" width="139rem" height="92rem"></button></a>
     </div>
   </div>
 </div>
@@ -121,7 +118,7 @@
         <div class="card pe-2" style="padding: 0 0 0 0.8rem;">
           <div class="row no-gutters">
             <div class="col-sm-5 p-0">
-              <img class="card-img" src="<?= URLROOT; ?>/img/banner.jpg" style="object-fit: cover;" height="145rem">
+              <img class="card-img" src="<?= URLROOT; ?>/img/beauty.jpg" style="object-fit: cover;" height="145rem">
             </div>
             <div class="col-sm-7 p-0">
               <div class="card-body">
@@ -162,7 +159,7 @@
         <div class="card pe-2" style="padding: 0 0 0 0.8rem;">
           <div class="row no-gutters">
             <div class="col-sm-5 p-0">
-              <img class="card-img" src="<?= URLROOT; ?>/img/banner.jpg" style="object-fit: cover;" height="145rem">
+              <img class="card-img" src="<?= URLROOT; ?>/img/shirt.jpg" style="object-fit: cover;" height="145rem">
             </div>
             <div class="col-sm-7 p-0">
               <div class="card-body">
@@ -203,7 +200,7 @@
         <div class="card pe-2" style="padding: 0 0 0 0.8rem;">
           <div class="row no-gutters">
             <div class="col-sm-5 p-0">
-              <img class="card-img" src="<?= URLROOT; ?>/img/banner.jpg" style="object-fit: cover;" height="145rem">
+              <img class="card-img" src="<?= URLROOT; ?>/img/electronic.jpg" style="object-fit: cover;" height="145rem">
             </div>
             <div class="col-sm-7 p-0">
               <div class="card-body">
@@ -240,7 +237,7 @@
       <ul class="bg-white">
         <li class="has-story">
           <div class="story">
-            <img style="object-fit: cover;" src="<?= URLROOT; ?>/img/banner.jpg">
+            <img style="object-fit: cover;" src="<?= URLROOT; ?>/img/shoe.jpg">
           </div>
           <span style="color:black;font-weight:normal;text-align: center;">Toko</span>
         </li>
@@ -260,7 +257,7 @@
     <div class="col-3 ps-0">
       <!--product 1-->
       <div class="card" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);">
-        <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/banner.jpg"></a>
+        <a class="text-center" href=""><img class="card-img-center pb-3" style="width:100%;height:13rem;object-fit:cover;" src="<?= URLROOT; ?>/img/game.jpg"></a>
         <div class="card-body pt-0 ">
           <div class="row">
             <span class="">Space for product name belong here</span>

@@ -21,6 +21,8 @@
     :root {
       --input-padding-x: 1.5rem;
       --input-padding-y: .75rem;
+      scrollbar-color: rgb(240, 84, 84) rgb(34, 40, 49) !important;
+      scrollbar-width: thin !important;
     }
 
     * {
@@ -31,7 +33,8 @@
 
     body {
       overflow-x: hidden;
-      font-family: "Roboto", sans-serif;
+      overflow-y: scroll;
+      scrollbar-color: rgb(34, 40, 49) rgb(240, 84, 84);
     }
 
     body::-webkit-scrollbar {
@@ -365,8 +368,6 @@
 
     /* end of slider product */
 
-
-
     /* footer */
     .site-footer {
       background: rgb(239, 240, 255);
@@ -376,13 +377,15 @@
   </style>
 
   <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="<?= URLROOT; ?>/js/bootstrap.min.js"></script>
 
   <title><?= $data['judul']; ?></title>
 </head>
 
 <body style="background-color:rgb(239, 240, 255)">
-  <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom sticky-top bg-white">
+  <header class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom fixed-top bg-white">
     <div class="col-3">
       <a href="<?= URLROOT; ?>/index" class="ps-3 text-dark text-decoration-none">
         <span class="logo">ShoppingSkuy</span>
@@ -419,7 +422,7 @@
           </svg>
         </a>
         <!-- message -->
-        <a href="<?= URLROOT; ?>/message" class="text-decoration-none me-4 border-right">
+        <a href="<?= URLROOT; ?>/messages" class="text-decoration-none me-4 border-right">
           <svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="15.5" viewBox="0 0 21.5 15.5">
             <g id="ic-contact-mail" transform="translate(-1.25 -4.25)">
               <rect id="Rectangle_25" data-name="Rectangle 25" width="20" height="14" rx="2" transform="translate(2 5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5" />
@@ -428,7 +431,7 @@
           </svg>
         </a>
         <!-- profile -->
-        <a href="<?= URLROOT; ?>/users/profile" class="text-decoration-none me-4">
+        <a href="<?= URLROOT; ?>/profile" class="text-decoration-none me-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="19.843" height="21.692" viewBox="0 0 19.843 21.692">
             <g id="ic-actions-user" transform="translate(-2.078 -1.23)">
               <path id="Path_42" data-name="Path 42" d="M3,22l.79-2.88c2.61-9.5,13.81-9.5,16.42,0L21,22" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
@@ -448,4 +451,4 @@
           </button></a>
       <?php endif; ?>
     </div>
-  </div>
+  </header>

@@ -171,11 +171,4 @@ class Users extends Controller
     header('location:' . URLROOT . '/users/login');
   }
 
-  public function profile()
-  {
-    $data['judul'] = 'Profile | ShoppingSkuy';
-    $this->view('includes/head', $data);
-    $this->view('users/profile', $data);
-    $this->view('includes/footer');
-  }
 }
