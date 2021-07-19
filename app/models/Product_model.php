@@ -35,9 +35,15 @@ class Product_model
     return $this->db->single();
   }
 
+<<<<<<< HEAD
+  public function updateViewProduct($data)
+  {
+    $query = "UPDATE product SET :prd_open_count WHERE id = :id";
+=======
   public function addViewProduct($data)
   {
     $query = "UPDATE product SET prd_open_count = :prd_open_count WHERE id = :id";
+>>>>>>> 544aa0b412a90d035d3f6d5166f81c361b532a01
 
     $this->db->query($query);
     $this->db->bind('prd_open_count', $data['prd_open_count']);
